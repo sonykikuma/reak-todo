@@ -75,12 +75,12 @@ export default function Home() {
       </div>
       <h1 className="text-center text-[40px]  mt-5"> Tasks </h1>
 
-      <div className="grid grid-cols-2 gap-5 mt-5">
+      <div className="grid grid-cols-2 gap-5 mt-5 md:grid-cols-3 lg:grid-cols-4">
         {/* grid items */}
 
         {todos.map((todo: any, i: any) => {
           return (
-            <div className="shadow p-4 rounded-md" key={i}>
+            <div className="shadow p-4 rounded-md bg-blue-100" key={i}>
               <div className="flex justify-between ">
                 <span
                   className="rounded-full shadow h-8 w-8 
@@ -92,7 +92,7 @@ export default function Home() {
                 <span
                   onClick={() => deleteTask(todo.id)}
                   className="rounded-full shadow h-8  w-8
-    text-center my-auto cursor-pointer text-red-700"
+    text-center items-center my-auto cursor-pointer text-red-700 bg-slate-50"
                 >
                   X
                 </span>
