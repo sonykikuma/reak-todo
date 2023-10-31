@@ -15,7 +15,7 @@ yarn dev
 pnpm dev
 Open http://localhost:3000 with your browser to see the result.
 
-This is a Todo App. Here we can add new task, update already added task and delete task.
+This is a Todo App with CRUD operations. Here we can add new task, update already added task and delete task.
 
 Tech Stack used here are NextJS, Tailwindcss, Typescript.
 
